@@ -29,8 +29,7 @@ body {
 }
 
 .navlinks {
-   display: flex;
-   flex-direction: column;
+    display: none;
     align-items: center;
     background-color: black;
     gap:12px;
@@ -79,7 +78,7 @@ body {
 
 .big-circle img {
     border-radius: 100%;
-    width: 500px;
+    width: 300px;
     height: auto;
     padding: 5px;
     border: 2px solid white;
@@ -104,6 +103,9 @@ body {
 
 .list {
     overflow-y: scroll;
+    height: 200px;
+    gap: 10px;
+    scrollbar-width: none;
 }
 
 .fact {
@@ -182,8 +184,13 @@ body {
     }
 
     .big-circle img {
-        height: 290px; /* Adjusted for smaller screens */
+        height: 250px; /* Adjusted for smaller screens */
         width: auto;
+    }
+
+    .navlinks.show {
+        display: flex;
+        flex-direction: column;
     }
 
     .part {
@@ -202,7 +209,7 @@ body {
     .list {
         gap: 10px;
         width: 100%;
-        height: 140px;
+        height: 260px;
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -214,12 +221,13 @@ body {
 
     .play {
         position: fixed; /* Use fixed for consistent positioning */
-        bottom: 10px;
-        padding: 5px 10px;
+        bottom: 0px;
+        padding: 10px 10px;
         justify-content: space-evenly;
         flex: 1;
         width: 100%;
         background-color: rgb(48, 46, 46);
+        
     }
 }
 
