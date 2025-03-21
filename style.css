@@ -181,6 +181,7 @@ body {
         height: auto; /* Adjust height to fit content */
         margin: 0 auto; /* Center the body */
         padding: 10px;
+        overflow: hidden;
     }
 
     .big-circle img {
