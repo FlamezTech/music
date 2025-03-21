@@ -182,6 +182,7 @@ body {
         margin: 0 auto; /* Center the body */
         padding: 10px;
         overflow: hidden;
+        overflow-y: hidden;
     }
 
     .big-circle img {
